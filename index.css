@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    /* text-transform: capitalize; */
+    /* font-family: 'IBM Plex Serif'; */
+    /* src: url(https://fonts.gstatic.com/s/ibmplexserif/v19/jizAREVNn1dOx-zrZ2X3pZvkTi20-SI5q1vxiQ.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; */
+    
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:b;
+    padding: 20px 10%;
+    transition: ease .40s;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: red;
+    font-family: 'IBM Plex Serif', serif;
+    cursor:default;
+
+
+}
+
+.navbar {
+    display: flex;
+
+}
+
+.navbar button {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: ease .40s;
+    background: whitesmoke;
+    box-shadow: 5px 5px 25px rgb(0,0,0,.5);
+    outline: none;
+    border: none;
+    
+}
+
+.navbar button:hover {
+    background-color:red;
+    color:white;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+    font-size: 20px;
+    /* transform: scale(1.1); */
+    
+
+}
+
+#menu-icon {
+    color: black;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+.welecom{
+    padding: 0%;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    /* margin-top: 6rem; */
+    overflow-y: hidden;
+    /* display: flex; */
+
+}
+
+.welecom video{
+    width: 100%;
+    object-fit: cover;   
+    height: 100vh;
+    
+    
+}
+.welecom  h1{
+    position: absolute;
+    top: 40%;
+    /* left: -20%; */
+    /* transform: translate(-35%,0%); */
+    font-size: 3rem;
+    /* background: #fff; */
+    width: 100%;
+    padding: 1rem 2rem;
+    /* text-align: center; */
+    /* mix-blend-mode: screen; */
+    color: white;
+    /* font-family: 'Roboto Slab', serif; */
+    user-select: none;
+
+}
+
+/* .welecom.active{
+    
+} */
+
+.pop_up{
+    position: absolute;
+    top: -140%;
+    left: 50%;
+    opacity:0;
+
+    transform: translate(-50%,-50%)scale(1.25);
+    /* transform: translateX(150%); */
+    /* font-size: 5rem; */
+    /* background: #fff; */
+    /* width: 100%; */
+    padding: 1rem 2rem;
+    /* text-align: center; */
+    /* mix-blend-mode: screen; */
+    /* color: white; */
+    /* font-family: 'Roboto Slab', serif; */
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+    outline: none;
+    border: none;
+}
+
+.pop_up.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%)scale(1);
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+    
+
+}
+
+form
+{
+ 
+  height:19rem;
+  /* background:url(login\ image1.jpg); */
+  /* background-size: cover; */
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #fff;
+  line-height: 2rem;
+}
+.login h2
+{
+    margin-top: 0;
+    text-align: center;
+    padding: .5rem;
+    color: #fff;
+    font-size: xx-large;
+    background-color: black;
+}
+.login h2 span{
+    position: relative;
+    left: 25%;
+}
+.login label 
+{
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: large;
+}
+.login input
+{
+    width: 80%;
+    padding: .5rem;
+    margin-left: 1rem;
+    border-radius: 2rem;
+}
+.login .reset
+{
+    width: 4rem;
+    padding: 1.5px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: black;
+    color: #fff;
+}
+.login button
+{
+   width: 80%;
+   padding: .5rem;
+   font-size: larger;
+   margin-top: 5%;
+   margin-left: 10%;
+   cursor: pointer;
+   border-radius: 5px;
+   background: black;
+   /* background-size: cover; */
+   color: #fff;
+}
+.login a
+{
+    float: right;
+    margin-right: 1rem;
+    /* color:black; */
+}
+.login a:hover 
+{
+    color: green;
+}
+/* h1
+{
+    text-align: center;
+    font-size: xxx-large;
+    
+} */
+span
+{
+    color:red;
+}
+
+.welecom video.active{
+    transition: .4s;
+    opacity: .4;
+
+    
+    
+    
+}

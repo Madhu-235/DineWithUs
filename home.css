@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    text-decoration:none;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+    /* overflow-y: hidden; */
+
+}
+body{
+    overflow-y: hidden;
+
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:whitesmoke;
+    padding: 20px 10%;
+    transition: ease .40s;
+    box-shadow: 5px 5px 25px rgba(0,0,0,.1);
+
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--bg-color);
+    /* font-family: 'IBM Plex Serif', serif; */
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+
+
+
+}
+
+.navbar {
+    display: flex;
+
+}
+
+.navbar a {
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+
+}
+
+#menu-icon {
+    color: black;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+#home{
+    position: relative;
+    margin-top: 5rem;
+    /* background-image: url(https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    
+}
+
+#home .product-container{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    
+
+
+    align-items: center;
+
+}
+#home .product-container .box-container{
+    position: relative;
+    
+}
+#home .product-container .box-container .p-image{
+    width: 1535px;
+
+    /* object-fit: cover; */
+    
+    
+}
+#home .product-container .p-image img{
+    /* position: relative; */
+    /* left: 0;
+    right: 0; */
+    width: 100%; 
+    height: 100vh;   
+    /* border: 10px solid; */
+    object-fit: cover;
+    /* z-index: -1; */
+
+}
+#home .product-container .arrow-left{
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+    /* font-size: 30px; */
+    font-size: 30px;
+    z-index: 2;
+     background-color: white;
+}
+#home .product-container .arrow-right{
+    position: absolute;
+    /* position: fixed; */
+    right: 0;
+    font-size: 30px;
+    z-index: 2;
+     background-color: white;
+     
+}
+/* #home img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+} */
+
+
+#home .product-container .box-container .content{
+
+    position:absolute;
+    
+    top: 20%;
+   
+    font-size: 2rem;
+    /* border: 2px solid; */
+    margin: 0 500px 0  100px;
+    
+
+}
+#home .product-container .box-container .p-image .content p{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+/* media querys */
+
+@media (max-width: 1400px){
+    header{
+        padding: 17px 3%;
+        transition: .2s;
+
+    }
+    header.sticky{
+        padding: 10px 3%;
+        transition: .2s;
+
+    }
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    :root{
+        --big-font:4.5rem;
+        --h2-font:2.3rem;
+        --p-font:1rem;
+        transition: .2s;
+    }
+
+}
+
+@media (max-width: 1040px){
+    #menu-icon{
+        display: block;
+
+    }
+    .sticky #menu-icon{
+        color: black;
+
+    }
+    .home{
+        height: 88vh;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 270px;
+        height: 120vh;
+        background: #1067cc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 30px;
+        transition: 0.5s all;
+    }
+    .navbar a{
+        display: block;
+        margin: 1.2rem 0;
+    }
+    .sticky  .navbar a{
+        color: var(--bg-color);
+
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+    }
+    .open{
+        right: 0;
+
+    }
+    .list{
+        width: 50%;
+        margin-bottom: 12px;
+
+    }
+}

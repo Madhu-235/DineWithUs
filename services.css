@@ -1,0 +1,300 @@
+#body{
+    overflow:scroll;
+}
+.page{
+    padding: 0 2%;
+    
+
+}
+
+/* .page.active{
+    opacity: .4;
+} */
+.service{
+    width: 100%;
+    /* height: 100vh; */
+    margin-top: 6rem;
+    /* padding: 0 5%; */
+}
+/* .service.active{
+    opacity: .4;
+
+} */
+/* .containers.active{
+    opacity: .4;
+} */
+.service .heading h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container .cities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* height: 200px; */
+    text-align: center;
+    /* padding: 0 10%; */
+    
+}
+.container .cities .city .image{
+    height: 250px;
+    width: 250px;
+    
+    /* border: 10px solid; */
+    border-radius: 100%;
+    padding: 0;
+    /* object-fit: fill; */
+    margin: 1.5rem 0;
+    /* background-size: cover; */
+    
+    
+
+}
+.container .cities .city .image img{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 10px solid;
+    cursor: pointer;
+    
+
+}
+.container .cities .city .image img:hover{
+    transform: scale(1.05);
+    transition: all .9s ease;
+}
+/* 
+
+
+
+/* ***************containers**************** */
+.containers{
+    display: none;
+    transition: .4s;
+}
+
+.containers.active{
+    display: initial;
+    transition:all .8s linear 1000ms;
+}
+.containers h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.containers span{
+    float:right;
+    /* margin-right:5%; */
+}
+.containers span button{
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.containers span button:hover{
+    background: red;
+}
+.containers .star5{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2.5rem;
+    justify-content: space-evenly;
+    
+    
+
+}
+
+.containers .star5 .rests{
+    text-align: center;
+    /* border: 1px solid; */
+    background: rgb(173, 174, 174);
+    padding: 10px;
+    border-radius: 30px 0 30px 0;
+
+}
+
+
+.containers .star5 .rests .rest_img img{
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px 0 30px 0;
+    cursor:none;
+    
+    
+}
+.containers .star5 .rests .rest_img h2{
+    /* position: absolute; */
+    
+    text-align: left;
+}
+
+.containers .star5 .rests .rest_img:hover img{
+    transform: scale(1.02);
+    transition: .4s ease;
+}
+
+.containers .star5 .rests .reg{
+    margin-top: 10px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* float: left; */
+    /* font-size: 18px; */
+
+}
+.containers .star5 .rests .reg:hover{
+    /* background: rgb(127, 237, 127); */
+    background: rgb(225, 167, 90);
+    /* font-size:18px ; */
+    transform: scale(.9);
+}
+.containers .star5 .rests .btn{
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 100%;
+    font-size: 22px;
+    /* margin-top: 50px; */
+    position: relative;
+    top: 3px;
+    color: blue;
+    background-color: white;
+ 
+}
+
+.containers .star5 .rests .btn:hover{
+    background: white;
+    /* font-size:18px ; */
+    transform: scale(1);
+}
+/* .maps{
+    padding: 20px;
+    background-color: aqua;
+} */
+
+.maps{
+    position:absolute;
+    
+    top: 70%;
+    left: 25%;
+    /* bottom: -280px; */
+    
+    display: none;
+    border-radius: 15px;
+    padding: 30px;
+    /* padding-right: 0px; */
+    background-color:whitesmoke;
+    /* border: 1.5rem solid rgb(173, 174, 174); */
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); */
+    object-fit: cover;
+
+
+
+}
+
+
+
+.maps2{
+    position:absolute;
+    
+    top: 140%;
+    left: 25%;
+    /* bottom: -785px; */
+
+    
+    display: none;
+    border-radius: 15px;
+    /* padding: 20px; */
+    /* padding-right: 0px; */
+    /* background-color: aqua; */
+    /* border: 1.5rem solid rgb(173, 174, 174); */
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+
+
+}
+
+.maps3{
+    position:absolute;
+    
+    top: 210%;
+    left: 25%;
+    /* bottom: -1285px; */
+
+    
+    display: none;
+    border-radius: 15px;
+    /* padding: 20px; */
+    /* padding-right: 0px; */
+    /* background-color: aqua; */
+    /* border: 1.5rem solid rgb(173, 174, 174); */
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); */
+
+
+
+}
+/* .maps iframe{
+
+    border: 1rem solid rgb(173, 174, 174);
+
+} */
+
+.maps i{
+    position: absolute;
+    top: 0px;
+    left: 630px;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+/* .maps i:focus{
+    transform: skewX(1);
+} */
+
+
+.maps.active{
+    display: initial;
+    z-index: 100;
+    /* opacity: 1; */
+    
+}
+
+
+
+/* .frame1{
+    position: absolute;
+    
+    top: 50%;
+    left: 25%;
+    
+    display: none;
+    border-radius: 15px;
+
+} */
+/* .frame1.active{
+    display: initial;
+    z-index: 1000;
+}
+
+.frame1.active-.page section{
+    opacity: .4;
+} */
+
+
+
+/* media querys */
+
+@media (max-width : 550px){
+    .containers .star5{
+        justify-content: center;
+        
+    }
+}

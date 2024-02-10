@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine with us</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo">Dine with us</a>
+        <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+        <ul class="navbar">
+            <li> <button id="open">sign in/sign up</button> </li>
+        </ul>
+    </header>
+
+
+    <section class="welecom">
+        <video src="./Dine.mp4" autoplay loop muted id="video">
+        </video>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis commodi inventore deserunt expedita!
+            </h1>
+        <div class="pop_up">
+            <form class="login" action="./home.html" onsubmit="return validateForm()">
+                <h2>Login <span id="close"><i class="fa-solid fa-xmark"></i></span></h2>
+                <label for="uname">Username/Email</label>
+                <input type="text/email" class="uname" id="usernames" placeholder="Enter username" required>
+                <p>
+
+                    <label>Password</label>
+                    <input type="password" class="password" id="passwords" placeholder="Enter password" required>
+                <p>
+
+
+                    <input type="reset" value="Reset" class="reset">
+                    <a href="forgot.html">Forgot password?</a>
+                <p>
+                    <button type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </section>
+    <script>
+        document.querySelector("#open").addEventListener("click", function () {
+            document.querySelector(".pop_up").classList.add("active");
+        });
+
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector(".pop_up").classList.remove("active");
+        });
+
+        document.querySelector("#open").addEventListener("click", function () {
+            document.querySelector("#video").classList.add("active");
+        });
+
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector("#video").classList.remove("active");
+        });
+
+        function validateForm() {
+            // username validate
+            let U = document.getElementById("usernames");
+            if (U.value == "") {
+                alert("Username cannot be empty");
+                return false;
+            }
+            else if (U.value.length < 5) {
+                alert("Username will be minimum 5 letters ")
+                return false;
+            }
+
+
+            // password validation
+            let P = document.getElementById("passwords");
+            if (P.value == "") {
+                alert("Paswword cannot be empty");
+                return false;
+            }
+            else if (P.value.length < 5) {
+                alert("Password will be minimum 5 letters")
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+    </script>
+
+    <script src="./script.js">
+
+
+
+    </script>
+</body>
+
+</html>
